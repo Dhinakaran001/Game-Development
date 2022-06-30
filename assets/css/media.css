@@ -1,0 +1,142 @@
+@media(max-width: 768px){
+    body, html{
+        overflow-x: hidden;
+    }
+    header>nav>ul>li{
+        display: block;
+    }
+    header>nav>ul>#anchor{
+        width: 25%;
+    }
+    header>nav>ul>#anchor2{
+        width: 30%;
+    }
+    header>nav>ul>#anchor3{
+        width: 33%;
+    }
+    header>nav>ul{
+        display: block;
+        position: absolute;
+        background-color: #1565C0;
+        height: 100vh;
+        width: 100%;
+        top: 0%;
+        left: -100%;
+        text-align: left;
+        z-index: 2;
+        top: -2%;
+        right: 5%;
+        transition: 0.6s;
+    }
+    header>nav>ul>li{
+        display: flex;
+        flex-direction: column;
+    }
+    header>nav>ul>li>a{
+        color: #fff;
+    }
+    header>nav>ul>li>a::after{
+        content: "";
+        height: 5px;
+        width: 0%;
+        background-color: #fff;
+        display: block;
+        border-radius: 20px;
+        margin: auto;
+        transition: 0.5s;
+    }
+    header>nav>ul>#anchor:hovera::after, header>nav>ul>#anchor2:hovera::after, header>nav>ul>#anchor3:hovera::after{
+        width: 100%;
+    }
+    header>nav>ul .fa-xmark{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 2rem;
+    }
+    header>nav .fa-bars{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0.5%;
+        right: 0%;
+    }
+    header>.text-box{
+        margin-top: 250px;
+    }
+    .text-box>h1{
+        font-size: 35px;
+    }
+    .text-box>a{
+        font-size: 0.8rem;
+    }
+    .container>a{
+        font-size: 1rem;
+        margin: 0px 110px;
+    }
+    .container1{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 100vh;
+    }
+    .service .service_icon{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service .service_icon .font{
+        background-color: #ddd;
+        margin: 20px;
+        padding: 20px;
+        height: 55px;
+    }
+    .service .service_icon .fa-solid,.service .service_icon .fa-brands{
+        font-size: 1rem;
+        padding: 5%;
+    }
+    .service_icon .font>a{
+        text-decoration: none;
+        color: #1565C0;
+        font-size: 0.6rem;
+        margin: 0px 10px 0px;
+        position: absolute;
+        left: 20%;
+    }
+    .about{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about>div>h1{
+        font-size: 2rem;
+    }
+
+    .img>div{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1000px){
+    .text-box{
+        margin-top: 150px;
+    }
+    .container>a{
+        margin: 0px 290px;
+    }
+    .img>div{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service .service_icon{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
